@@ -13,9 +13,7 @@ const weather_body = document.querySelector('.weather-body');
 
 async function checkWeather(city){
     const api_key = "b40e12de2064a2186a219b818c6ea872";
-    const url = `https://pro.openweathermap.org/data/2.5/forecast/hourly?q={city}&appid={api_key}`;
-
-    const weather_data = await fetch(`${url}`).then(response => response.json());
+    const url = `https://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_keyonse.json());
 
 
     if(weather_data.cod === `404`){
